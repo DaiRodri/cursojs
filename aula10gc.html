@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos dom</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background-color: bisque;
+            color: black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div id = "area" > 
+        interaja...
+    </div>
+
+    <script>
+        
+        var a = document.getElementById("area") 
+        
+        a.addEventListener ("click", clicar)// isso são eventos para fazer dentro do javascript
+        a.addEventListener ("mouseenter",entra)//isso são eventos para fazer dentro do javascript
+        a.addEventListener ("mouseout",sair)//isso são eventos para fazer dentro do javascript
+        
+        function clicar(){
+        a.innerText = "clicou!" 
+        a.style.background = "pink"
+        window.location.href = "https://www.globo.com "
+
+        }
+        function entra (){
+        a.innerText = "entrou"
+        a.style.color = "blue"
+        }
+
+        function sair (){
+        a.innerText = "sair"
+        a.style.background = "green"
+        }
+    //  onclick="clicar ()" onmouseenter="entra ()"  onmouseout="sair ()", são eventos tbm,mas para criar dentro do html
+        
+    
+    </script>
+
+    
+</body>
+</html>
